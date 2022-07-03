@@ -10,3 +10,6 @@ def get():
     youtube_id = request.args.get('id')
     srt = YouTubeTranscriptApi.get_transcript("3inFWGBsrKc&t=193s", languages=['en'])
     return srt
+
+if __name__ == '__main__':
+    app.run()
